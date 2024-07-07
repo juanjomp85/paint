@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="colors">
+      <button
+        id="black"
+        onclick='changeColor("black")'
+        ontouchstart='changeColor("black")'
+      ></button>
+      <button
+        id="red"
+        onclick='changeColor("red")'
+        ontouchstart='changeColor("red")'
+      ></button>
+      <button
+        id="green"
+        onclick='changeColor("green")'
+        ontouchstart='changeColor("green")'
+      ></button>
+      <button
+        id="blue"
+        onclick='changeColor("blue")'
+        ontouchstart='changeColor("blue")'
+      ></button>
+      <button
+        id="orange"
+        onclick='changeColor("orange")'
+        ontouchstart='changeColor("orange")'
+      ></button>
+      <button
+        id="pink"
+        onclick='changeColor("pink")'
+        ontouchstart='changeColor("pink")'
+      ></button>
+    </div>
+    <canvas id="canvas" width="350" height="550"></canvas>
+    <div id="container">
+      <div id="width">
+        <button
+          id="max"
+          onclick="selectWidth(10)"
+          ontouchstart="selectWidth(10)"
+        >
+          max
+        </button>
+        <button id="mid" onclick="selectWidth(5)" ontouchstart="selectWidth(5)">
+          mid
+        </button>
+        <button id="min" onclick="selectWidth(2)" ontouchstart="selectWidth(2)">
+          min
+        </button>
+      </div>
+      <div>
+        <button id="clear" onclick="clearCanvas()">Limpiar</button>
+      </div>
+    </div>
+  </body>
+</html>
